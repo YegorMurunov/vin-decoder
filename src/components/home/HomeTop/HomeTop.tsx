@@ -95,7 +95,8 @@ const HomeTop = () => {
 							type='text'
 							value={vin}
 							onChange={useCallback(
-								e => setVin(e.target.value.toUpperCase()),
+								(e: React.ChangeEvent<HTMLInputElement>) =>
+									setVin(e.target.value.toUpperCase()),
 								[]
 							)}
 							placeholder='Type a VIN code'
