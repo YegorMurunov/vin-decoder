@@ -1,0 +1,40 @@
+@reference "#global.scss";
+
+.homeTop {
+	&__inner {
+		@apply flex w-full flex-col rounded-lg border-2 border-gray-200 bg-white;
+	}
+	&__title {
+		@apply w-full border-b-2 border-gray-200 px-6 py-4;
+	}
+
+	&__form {
+		@apply flex w-full flex-wrap items-center gap-2 px-6 py-4;
+	}
+
+	&__error {
+		// @apply px-6 pb-4 text-red-700;
+		@apply mx-auto w-full rounded-md border border-red-200 bg-red-50 p-4 text-red-500;
+		width: calc(100% - 3rem);
+	}
+}
+
+.form {
+	&__input {
+		@apply h-10 w-full max-w-md rounded-md border border-gray-200 px-4 py-2 pr-12 font-bold text-gray-700 transition-colors duration-300 focus:border-sky-800 focus:outline-none;
+	}
+	&__pasteBtn {
+		@apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border border-gray-200 bg-white text-gray-400 transition-colors duration-300;
+
+		&:hover {
+			@apply border-sky-800 bg-gray-100 text-sky-900;
+		}
+	}
+	&__btn {
+		@apply h-10 cursor-pointer rounded-md border bg-sky-700 px-6 py-2 text-white transition-colors duration-300;
+
+		&:hover {
+			@apply border-sky-800 bg-white text-sky-800;
+		}
+	}
+}

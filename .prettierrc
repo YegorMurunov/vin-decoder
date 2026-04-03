@@ -1,0 +1,13 @@
+{
+	"tailwindStylesheet": "./src/global.scss",
+	"tabWidth": 2,
+	"useTabs": true,
+	"singleQuote": true,
+	"jsxSingleQuote": true,
+	"arrowParens": "avoid",
+	"semi": true,
+	"trailingComma": "none",
+	"bracketSpacing": true,
+	"insertPragma": false,
+	"plugins": ["prettier-plugin-tailwindcss"]
+}

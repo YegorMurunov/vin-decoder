@@ -1,0 +1,9 @@
+@reference "#global.scss";
+
+.container {
+	@apply relative flex min-h-dvh w-full items-center justify-center p-4;
+
+	.icon {
+		@apply h-12 w-12;
+	}
+}

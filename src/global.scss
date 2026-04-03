@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+@theme {
+	--font-sans: 'Roboto', sans-serif;
+}
+
+:root {
+	@apply bg-white font-sans text-base text-black;
+}
+
+html {
+}
+body {
+	margin: 0;
+	@apply scroll-smooth bg-gray-50 font-sans text-base text-black;
+}
+
+.container {
+	@apply mx-auto max-w-7xl px-4;
+}
